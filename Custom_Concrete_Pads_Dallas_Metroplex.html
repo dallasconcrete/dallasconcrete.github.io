@@ -392,20 +392,20 @@
               <fieldset>
                 <div class="tg-col">
                   <div class="form-group">
-                    <input type="text" name="name" class="form-control" placeholder="Full name *" id="contact_name">
+                    <input type="text" name="name" class="form-control" placeholder="Name *" id="contact_name" required="true">
                   </div>
                   <div class="form-group">
-                    <input type="email" name="_replyto" class="form-control" placeholder="Email *" id="contact_email">
+                    <input type="email" name="_replyto" class="form-control" placeholder="Email *" id="contact_email" required="true">
                   </div>
                   <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="Phone Number *" name="phone" id="contact_phone">
+                    <input type="tel" class="form-control" placeholder="Phone Number *" name="phone" id="contact_phone" required="true">
                   </div>
                   <input type="hidden" name="_cc" value="fugu0713@gmail.com,sterling.baldwin@gmail.com" />
                   <div class="form-group">
                     <input type="text" name="address" class="form-control" placeholder="Full Address *" id="contact_address" required="true">
                   </div>
                   <div class="form-group">
-                    <input type="text" name="contact_reference" class="form-control" placeholder="How did you hear about us" id="contact_reference" >
+                    <input type="text" name="contact_zip" class="form-control" placeholder="Zip Code*" id="contact_reference" required="true">
                   </div>
 
                   <div class="form-group">
@@ -414,8 +414,20 @@
                 </div>
                 <div class="tg-col">
                   <div class="form-group">
-                    <textarea class="form-control" name="message" placeholder="Tell us about your project *" id="contact_message" required="true"></textarea>
+                    <div class="concrete-work-select">
+                      <div class="form-group">
+                        <select class="form-control" name="job" id="contact_job" required="true">
+                          <option value="" readonly>Type of Work</option>
+                          <option value="Residential Flatwork">Residential Flatwork</option>
+                          <option value="Driveways-Approaches">Driveways &amp; Approaches</option>
+                          <option value="Patios-Sidewalks">Patios &amp; Sidewalks</option>
+                          <option value="Residential Flatwork">Small Business &amp; Parking Lots Etc.</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
                   </div>
+
                   <div class="form-group">
                     <textarea type="text" id="contact_time"name="contact-time" class="form-control" placeholder="Tell us the best time to contact you
 
